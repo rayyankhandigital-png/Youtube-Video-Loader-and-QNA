@@ -1,6 +1,19 @@
 # 🎥 YouTube Video Loader and QNA
 
-A simple **Streamlit** application that loads a YouTube video's transcript and allows users to ask questions about the video. The application searches the transcript for relevant words from the user's question and displays matching sentences as the answer.
+## 📌 Description
+
+**YouTube Video Load and QNA** is a simple Streamlit-based application that allows users to load a YouTube video's transcript and ask questions about its content. The application uses the **YouTube Transcript API** to retrieve the transcript from a provided YouTube URL.
+
+The user first enters a YouTube video link and clicks the **Load Video** button. The application extracts the video ID from the URL and retrieves the available transcript. The transcript is then displayed on the screen and stored using Streamlit session state.
+
+After loading the video, the user can enter a question related to the video's content. The application compares the words in the question with sentences from the transcript and finds sentences containing relevant keywords. These matching sentences are then displayed as the answer.
+
+The project uses **Python**, **Streamlit**, **YouTube Transcript API**, and **Regular Expressions**. It provides a simple and beginner-friendly example of working with YouTube transcripts and building an interactive question-answering application.
+
+Although the current version uses keyword matching instead of an AI language model, it can be extended in the future with **LLMs, embeddings, vector databases, and RAG (Retrieval-Augmented Generation)** to provide more accurate and contextual answers.
+
+This project is useful for learning how to build simple web applications with Streamlit and how to retrieve and process YouTube video transcripts.
+
 
 ## 🚀 Features
 
