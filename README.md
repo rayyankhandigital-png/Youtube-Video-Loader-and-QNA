@@ -1,2 +1,110 @@
-# Youtube-Video-Loader-and-QNA
-A simple Streamlit application that loads YouTube video transcripts and allows users to ask questions about the video. It uses the YouTube Transcript API to retrieve transcripts and keyword matching to find relevant answers. The application provides a simple interface where the user can enter a YouTube video URL. 
+# 🎥 YouTube Video Loader and QNA
+
+A simple **Streamlit** application that loads a YouTube video's transcript and allows users to ask questions about the video. The application searches the transcript for relevant words from the user's question and displays matching sentences as the answer.
+
+## 🚀 Features
+
+* 🎥 Enter a YouTube video URL
+* 📝 Load the video's transcript
+* 📄 Display the transcript in the app
+* ❓ Ask questions about the video
+* 🔍 Search the transcript for relevant information
+* 💡 Display matching answers
+* ⚠️ Shows helpful messages when the transcript or video URL is invalid
+
+## 🛠️ Technologies Used
+
+### **Streamlit**
+
+**Streamlit** is used to create the web interface for the application. It provides text boxes, buttons, messages, and transcript display without requiring HTML or CSS.
+
+### **YouTube Transcript API**
+
+The **YouTube Transcript API** is used to retrieve the transcript of a YouTube video using its video ID.
+
+### **Regular Expressions (re)**
+
+The `re` library is used to extract the YouTube video ID from the provided URL.
+
+### **Python**
+
+Python is used to build the complete application and implement the transcript loading and question-answering logic.
+
+## ⚙️ How It Works
+
+1. The user enters a YouTube video URL.
+2. The application extracts the video ID from the URL.
+3. The YouTube Transcript API retrieves the video's transcript.
+4. The transcript is stored in Streamlit's session state.
+5. The user enters a question about the video.
+6. The application compares words from the question with sentences in the transcript.
+7. Matching sentences are collected.
+8. The relevant sentences are displayed as the answer.
+
+## 📂 Project Structure
+
+```text
+YouTube-Video-QNA/
+│
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/rayyankhandigital-png/Youtube-Video-Loader-and-QNA/edit/main/README.md
+```
+
+
+
+## ▶️ Run the Application
+
+Run the following command:
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your web browser.
+
+## 💻 Example
+
+Enter a YouTube URL such as:
+
+```text
+https://www.youtube.com/watch?v=libKVRa01L8
+```
+
+Click **Load Video**, and the transcript will be displayed.
+
+Then enter a question such as:
+
+```text
+What is the video about?
+```
+
+Click **Ask Question** to search the transcript for relevant sentences.
+
+## ⚠️ Limitations
+
+* The video must have an available YouTube transcript.
+* The question-answering system uses keyword matching rather than an AI language model.
+* Answers depend on words from the question appearing in the transcript.
+* It may not understand the meaning or context of complex questions.
+
+## 📄 Requirements
+
+Create a `requirements.txt` file containing:
+
+```text
+streamlit
+youtube-transcript-api
+```
+
+## 🙌 Conclusion
+
+This project demonstrates how **Streamlit** and the **YouTube Transcript API** can be combined to create a simple application for loading YouTube transcripts and answering questions using transcript-based keyword matching. It is a good starting point for building more advanced AI-powered video Q&A applications.
