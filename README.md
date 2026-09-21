@@ -117,9 +117,6 @@ Create a `requirements.txt` file containing:
 streamlit
 youtube-transcript-api
 ```
-## 🎥Video
-"C:\Users\USER\Downloads\Video (1).mp4"
-
 
 ## 🙌 Conclusion
 
